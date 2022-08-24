@@ -9,12 +9,12 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         ArrayList<Integer> listA = new ArrayList<>();
         System.out.println("Введите ваши любимые числа: ");
-        Integer ListB = scanner.nextInt();
+        Integer a = scanner.nextInt();
         Integer b = scanner.nextInt();
         Integer c = scanner.nextInt();
         Integer d = scanner.nextInt();
         Integer g = scanner.nextInt();
-        listA.add(ListB);
+        listA.add(a);
         listA.add(b);
         listA.add(c);
         listA.add(d);
