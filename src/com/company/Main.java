@@ -1,9 +1,7 @@
 package com.company;
 
-import java.lang.reflect.Array;
 import java.util.*;
 import java.util.Scanner;
-import java.util.function.UnaryOperator;
 
 public class Main {
 
@@ -41,16 +39,20 @@ public class Main {
 
 
         System.out.println("_________________________________________-");
-        Collections.reverse(listB);
+        Collections.reverse(listB);// Меняем места наоборот
         System.out.println(listB);
 
         Integer length = listA.size();
-        ArrayList<String> listC = new ArrayList<String>(length);
+        ArrayList<Integer> listC = new ArrayList<>(length);
         for (int i = 0; i < length; i++) {
-            listC.add(listA.get(i) + ", " + listB.get(i));// здесь мы соединили 2 листа : listA , listB
+            listC.add(listA.get(i));// здесь мы соединили 2 листа : listA , listB
+            listC.add(listB.get(i));
         }
 
         System.out.println("----- Мы объединили ваши любимые и НЕ любимые числа:  ------1");
+        System.out.println(listC);
+
+        Collections.sort(listC);// Здесь делаем от меньшего к большему
         System.out.println(listC);
     }
 }
